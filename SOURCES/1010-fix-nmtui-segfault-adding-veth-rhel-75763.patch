@@ -132,7 +132,7 @@ index 0000000000..35d0d78d58
 +    section = nmt_editor_section_new(_("ETHERNET"), NULL, FALSE);
 +    grid    = nmt_editor_section_get_body(section);
 +
-+    widget = nmt_mac_entry_new(40, ETH_ALEN, NMT_MAC_ENTRY_TYPE_CLONED);
++    widget = nmt_mac_entry_new(40, ETH_ALEN, NMT_MAC_ENTRY_TYPE_CLONED_ETHERNET);
 +    g_object_bind_property(s_wired,
 +                           NM_SETTING_WIRED_CLONED_MAC_ADDRESS,
 +                           widget,
@@ -239,5 +239,4 @@ index 70264d3ec2..1fd44b2957 100644
                                              NM_SETTING_BRIDGE_SETTING_NAME,
 -- 
 2.47.1
-
 
